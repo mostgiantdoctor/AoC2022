@@ -1,7 +1,6 @@
 with open("2022/2022_3.txt") as f:
     lines = f.read().splitlines()
 
-
 def char_position(letter):
     if letter.isupper():
         value = ord(letter) +27 +32 -97
