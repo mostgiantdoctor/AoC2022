@@ -41,7 +41,7 @@ for line in range(0, len(lines), 3):
     #            letters.append(letter)
     #            next = True
     #           break
-1
+    #
     #einfacher über sets:
     unique_letter = set(lines[line]) & set(lines[line+1]) & set(lines[line+2])
     letters.append(list(unique_letter)[0])
@@ -50,11 +50,3 @@ for line in range(0, len(lines), 3):
 result = [char_position(char) for char in letters]
 sum(result)
 
-
-
-
-
-
- #                   score =+ char_position(letter) +26 +25
-  #              else:
-   #                 score =+ char_position(letter) + 1
