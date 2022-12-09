@@ -10,7 +10,7 @@ for i in range(len(lines)):
     else:
         sumcals.append(sumcal)
         sumcal = 0
-max(sumelfs)
+max(sumcals)
 
 #PartII
 
