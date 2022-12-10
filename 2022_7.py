@@ -1,6 +1,4 @@
 import re
-from itertools import zip_longest
-
 with open("2022/2022_7.txt") as f:
     lines = f.read().splitlines()
 
