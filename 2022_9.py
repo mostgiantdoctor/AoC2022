@@ -5,16 +5,13 @@ with open("2022/2022_9.txt") as f:
     lines = f.read().splitlines()
 
 lines = [line.split(" ") for line in lines]
-tail_len = 9  # for part 2 = 9, part 1 = 1
+tail_len = 1 # for part 2 = 9, part 1 = 1
 
 # Part 2
 def tail_pos(position_t, position_h, positions_t, position_h_before, i):
     pos_dif_x = position_t[0] - position_h[0]
     pos_dif_y = position_t[1] - position_h[1]
     # print("1", direct, "Head:", position_H, "Tail:", position_T, "Dif X:", pos_dif_x, "Dif Y:", pos_dif_y)
-
-    if abs(pos_dif_x) > 1 or abs(pos_dif_y) > 1:
-        position_t = position_h_before
     if abs(pos_dif_x) == 2 and abs(pos_dif_y) == 2:
         position_t = position_h_before
     elif abs(pos_dif_x) == 2:
